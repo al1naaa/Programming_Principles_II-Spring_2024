@@ -14,6 +14,6 @@ class Account:
         else:
             print("You took it off", wtdr, " and your current balance is exactly ", self.balance-wtdr)
             self.balance=self.balance-wtdr
-x=Account("Talant", 50000)
+x=Account("Alina", 50000)
 x.deposit(24, 15)
 x.withdraw(25000)
