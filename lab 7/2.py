@@ -13,8 +13,13 @@ pygame.mixer.music.load(music_files[current_track_index])
 
 # Create a basic GUI window
 pygame.init()
-screen = pygame.display.set_mode((400, 300))
+screen = pygame.display.set_mode((400, 215))
 pygame.display.set_caption("Keyboard Music Player")
+
+# Load instructions image
+instructions_image = pygame.image.load(r"C:\Users\Алина\Desktop\пп2\PP2\lab 7\images\images\instructions.png")
+screen.blit(instructions_image, (0, 0))
+pygame.display.flip()
 
 def play_music():
     if not pygame.mixer.music.get_busy():
@@ -55,7 +60,7 @@ while running:
                 stop_music()
             elif event.key == pygame.K_n:  # 'N' next track
                 next_track()
-            elif event.key == pygame.K_b:  # 'B' previous track
+            elif event.key == pygame.K_p:  # 'P' previous track
                 prev_track()
             elif event.key == pygame.K_q:  # 'Q' quit
                 running = False  # Set running to False to break the loop before quitting
