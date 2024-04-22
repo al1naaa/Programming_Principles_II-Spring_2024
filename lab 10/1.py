@@ -89,6 +89,12 @@ if __name__ == "__main__":
     # print(query_data("first_name = 'John'"))
     # update_data('John', new_phone='1234567890')
     # delete_data(first_name='John')
-#INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Alina', 'Rabchenyuk', 8778788223);
+#INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Alina', 'Rabchenyuk', 87787882238);
 #INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Maxim', 'Kim', 8777700789);
 #INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Aidana', 'Nurlanova', 8705245345);
+
+
+'''INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Alina', 'Rabchenyuk', 87787882238);
+INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Maxim', 'Kim', 8777700789);
+INSERT INTO phonebook(first_name, last_name, phone) VALUES ('Aidana', 'Nurlanova', 8705245345);
+SELECT * FROM phonebook;'''

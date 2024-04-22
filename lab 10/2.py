@@ -246,4 +246,3 @@ while True:
 
     # Frame Per Second /Refresh Rate
     fps.tick(snake_speed)
-    # delete_data(username='adb')
