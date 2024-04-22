@@ -22,16 +22,29 @@ pygame.init()
 
 
 
+
 conn = psycopg2.connect(
     host="localhost",
-    database="postgres",
+    database="suppliers",
     user="postgres",
-    password="PostgreTalant"
+    password="Aa1234"
 )
 
 cur = conn.cursor()
 
+cur.execute("""
+        CREATE TABLE IF NOT EXISTS users (
+            user_id SERIAL PRIMARY KEY,
+            username VARCHAR(100)
+        );
+    """)
 
+cur.execute("""
+        CREATE TABLE IF NOT EXISTS user_score (
+            user_id SERIAL PRIMARY KEY,
+            score INTEGER
+        );
+    """)
 # Initialise game window
 pygame.display.set_caption('Snake')
 game_window = pygame.display.set_mode((window_x, window_y))
@@ -233,3 +246,4 @@ while True:
 
     # Frame Per Second /Refresh Rate
     fps.tick(snake_speed)
+    # delete_data(username='adb')
