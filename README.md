@@ -1,1 +1,1 @@
-# PP2
+# Programming principles II (PP2)
